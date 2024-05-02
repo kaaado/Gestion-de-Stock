@@ -56,7 +56,7 @@ To get started with the project, follow these steps:
 ## Contributors
 
 - **Yacine Kermame**:
-- GitHub: [yacineyoyoker](https://github.com/kaaado)
+- GitHub: [kaaado](https://github.com/kaaado)
 - Email: yacineyoyoker@gmail.com
 - Facebook: [yacine.kermam.7](https://www.facebook.com/yacine.kermam.7)
 
