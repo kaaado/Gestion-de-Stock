@@ -1,0 +1,280 @@
+:root {
+    --bg-color: #fff;
+    --bg-color2: rgb(121, 5, 230);
+    --color: #000;
+    --color2: #FFF;
+    --color-txt: #E3E2E6;
+    --color-txt-slvr: #CECECE;
+    --color-txt-slvr2: #CCCCCC;
+    --bg-btn: rgb(121, 5, 230);
+    --bg-btn2: rgb(102, 0, 204);
+    --hover: rgb(95, 0, 178);
+    --focus: rgb(187, 170, 255);
+    --error: red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+}
+
+/* Scrollbar Design */
+
+html {
+    scrollbar-color: var(--bg-color2) var(--color-txt-slvr);
+    scrollbar-width: 12px;
+}
+
+
+
+
+/*   class made */
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-sps-btwn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.dash {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*section*/
+.section {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/*main */
+.main {
+    width: 83%;
+    min-height: 100vh;
+    padding: 20px;
+    margin-left: 18%;
+    background-color: rgb(233, 236, 239);
+}
+
+/*users*/
+.users {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+/*tablee*/
+
+.user-table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #fff;
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+}
+
+.user-table th {
+    background-color: var(--bg-btn);
+
+}
+
+.user-table th,
+.user-table td {
+    text-align: center;
+}
+
+/* Style the table header cells */
+.user-table th {
+    background-color: var(--bg-btn);
+    color: #fff;
+}
+
+.user-table tr {
+    border: 5px solid rgb(233, 236, 239);
+    background-color: var(--bg-btn);
+}
+
+/*icon tableu*/
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* products*/
+
+.add-btn {
+    text-decoration: none;
+    color: white;
+    background-color: var(--bg-btn);
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 800;
+    margin: 5px 8px 0 0;
+    border-radius: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 200px;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 4px;
+    border: 2px solid #ced4da;
+    outline: none;
+    margin-left: 5px;
+}
+
+.search-container button {
+    width: 35px;
+    height: 38px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: var(--bg-btn);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* New Products */
+
+.image-input-container input {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    border: gold 2px solid;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: #000;
+}
+
+.image-preview {
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+.image-preview p {
+    margin-top: 5px;
+    color: white;
+}
+
+/* Move title and desc up when image is selected */
+.father .prod form {
+    position: relative;
+}
+
+.father .prod label,
+.father .prod input,
+.father .prod button {
+    transition: margin-top 0.5s ease;
+}
+
+.father .prod input:focus+.image-input-container label,
+.father .prod input:valid+.image-input-container label {
+    margin-top: -40px;
+}
+
+.father .prod label {
+    margin-top: 10px;
+    /* Adjust as needed */
+}
+
+/* products Card*/
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-details p:last-child {
+    margin-bottom: 0;
+}
+
+.products-page {
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

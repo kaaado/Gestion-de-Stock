@@ -1,0 +1,34 @@
+.navBar {
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    height: 50px;
+    width: calc(100% + 20px);
+    background-color: white;
+}
+
+.navBar .navItem {
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-txt-slvr);
+
+    position: relative;
+}
+
+.navBar .navItem.active {
+    color: black;
+}
+
+.navBar .navItem.active::after {
+    content: '';
+    background-color: var(--bg-btn);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}

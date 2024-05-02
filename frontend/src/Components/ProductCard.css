@@ -1,0 +1,67 @@
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 5px;
+  margin-left: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width:290px; 
+  display:flex;
+  justify-content:center;
+  flex-direction:column;;
+ 
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card i{
+text-align:right;
+font-size:20px; 
+font-weight:bold;
+margin-right:15px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding:10px 15px;
+  margin:5px;
+  cursor: pointer;
+}
+
+.quantity span {
+font-size:28px;
+  margin: 0 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.order-btn {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.order-btn a{ 
+text-decoration:none;
+color:white;
+}
+
+.order-btn:hover {
+  background-color: #219d54;
+}
